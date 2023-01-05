@@ -60,7 +60,7 @@ class Rectangle:
         """Return the printable representation of the Rectangle.
         Represents the rectangle with the # character.
         """
-        if self._width == 0 or self._height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
@@ -80,4 +80,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
